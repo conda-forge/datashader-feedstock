@@ -1,13 +1,13 @@
 {% set name = "datashader" %}
 {% set version = "0.6.6" %}
-{% set sha256 = "583fa37fec94de59a8910097430fb0157927020448910ea78be4bc77899471e9" %}
+{% set sha256 = "fe0a3d96203a4af2c55e6ecf6ccb5d993e2f7ea3b03220e25108744e1fe0d73f" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.zip
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -54,7 +54,7 @@ test:
     - pytest --nbsmoke-run -k ".ipynb" getting_started/2_Pipeline.ipynb
 
 about:
-  home: https://github.com/bokeh/datashader
+  home: http://datashader.org
   license: New BSD
   license_file: LICENSE.txt
   summary: 'Data visualization toolchain based on aggregating into a grid'
