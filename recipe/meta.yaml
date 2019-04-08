@@ -41,8 +41,8 @@ requirements:
 test:
   requires:
     - nbsmoke >=0.2.6
-    - pytest ==3.6.3
-    - pytest-benchmark ==3.0.0
+    - pytest >=3.9
+    - pytest-benchmark ==3.0
   imports:
     - datashader
   commands:
