@@ -29,7 +29,7 @@ requirements:
     - datashape >=0.5.1
     - numba >=0.37.0
     - numpy >=1.7
-    - pandas >=0.20.3
+    - pandas >=0.20.3,<0.25
     - param >=1.6.1
     - pillow >=3.1.1
     - pyct >=0.4.5
