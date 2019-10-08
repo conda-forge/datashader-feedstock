@@ -48,10 +48,8 @@ test:
   imports:
     - datashader
   commands:
-    # just commenting the tests out for datashader 0.7.0 build 1 since pandas >0.25 breaks the testing mechanisms
-    # - pytest --pyargs --doctest-modules --doctest-ignore-import-errors datashader
+    - pytest --pyargs --doctest-modules --doctest-ignore-import-errors datashader
     - datashader copy-examples --path=. --force
-    - datashader fetch-data --path=. --datasets small.yml
     # just run one notebook for now; increase in the future if notebooks can be run quickly with test/tiny data
     - pytest --nbsmoke-run -k ".ipynb" getting_started/2_Pipeline.ipynb
 
@@ -65,7 +63,7 @@ about:
     Datashader is a data rasterization pipeline for automating the process of
     creating meaningful representations of large amounts of data.
   doc_url: http://datashader.org
-  dev_url: https://github.com/bokeh/datashader
+  dev_url: https://github.com/pyviz/datashader
 
 extra:
   recipe-maintainers:
