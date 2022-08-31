@@ -24,7 +24,7 @@ requirements:
   run:
     - python >=3.7
     - colorcet >=0.9.0
-    - dask-core
+    - dask
     - datashape >=0.5.1
     - numba >=0.51.0
     - pandas >=0.24.1
