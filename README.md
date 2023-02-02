@@ -153,7 +153,6 @@ Feedstock Maintainers
 
 * [@ianthomas23](https://github.com/ianthomas23/)
 * [@jbednar](https://github.com/jbednar/)
-* [@jsignell](https://github.com/jsignell/)
 * [@ocefpaf](https://github.com/ocefpaf/)
 * [@philippjfr](https://github.com/philippjfr/)
 
