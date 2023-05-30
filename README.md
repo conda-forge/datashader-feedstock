@@ -1,11 +1,11 @@
-About datashader
-================
+About datashader-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/datashader-feedstock/blob/main/LICENSE.txt)
 
 Home: https://datashader.org
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/datashader-feedstock/blob/main/LICENSE.txt)
 
 Summary: Data visualization toolchain based on aggregating into a grid
 
