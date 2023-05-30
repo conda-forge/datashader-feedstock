@@ -17,31 +17,33 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.8
     - pip
-    - param >=1.6.1
-    - pyct-core >=0.4.5
+    - param
+    - pyct-core
   run:
-    - python >=3.7
-    - colorcet >=0.9.0
+    - python >=3.8
+    - colorcet
     - dask-core
-    - datashape >=0.5.1
-    - numba >=0.51.0
-    - pandas >=0.24.1
-    - param >=1.6.1
-    - pillow >=3.1.1
-    - pyct >=0.4.5
+    - datashape
+    - numba
+    - numpy
+    - pandas
+    - param
+    - pillow
+    - pyct
     - requests
     - scipy
-    - xarray >=0.9.6
+    - toolz
+    - xarray
 
 test:
   requires:
-    - fastparquet >=0.1.6
+    - fastparquet
     - flake8
-    - nbsmoke >=0.2.6
-    - pytest >=3.9.3
-    - pytest-benchmark >=3.0.0
+    - nbsmoke >0.5
+    - pytest
+    - pytest-benchmark
     - holoviews >=1.14.1
     - netcdf4
   imports:
