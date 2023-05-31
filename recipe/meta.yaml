@@ -41,7 +41,7 @@ test:
   requires:
     - fastparquet
     - flake8
-    - nbsmoke >0.5
+    - nbsmoke >=0.5.0
     - pytest
     - pytest-benchmark
     - holoviews >=1.14.1
