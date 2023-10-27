@@ -1,4 +1,4 @@
-{% set version = "0.15.2" %}
+{% set version = "0.16.0" %}
 
 package:
   name: datashader
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/d/datashader/datashader-{{ version }}.tar.gz
-  sha256: 9539529379287d69c10e9ab4e0b2900e1a16004d6ff06de0d84aa62c4833b1bb
+  sha256: ed4c111957578dcb3fcff972d954f77586dafd71a7345fd5cd069d9fb050d0d1
 
 build:
   number: 0
@@ -17,15 +17,15 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.9
     - pip
     - param
     - pyct-core
   run:
-    - python >=3.8
+    - python >=3.9
     - colorcet
     - dask-core
-    - datashape
+    - multipledispatch
     - numba
     - numpy
     - pandas
