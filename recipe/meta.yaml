@@ -17,15 +17,15 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.9
     - pip
     - param
     - pyct-core
   run:
-    - python >=3.8
+    - python >=3.9
     - colorcet
     - dask-core
-    - datashape
+    - multipledispatch
     - numba
     - numpy
     - pandas
