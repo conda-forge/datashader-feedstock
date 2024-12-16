@@ -5,11 +5,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/d/datashader/datashader-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/d/datashader/datashader-{{ version }}.tar.gz
   sha256: 9d0040c7887f7a5a5edd374c297402fd208a62bf6845e87631b54f03b9ae479d
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   entry_points:
@@ -17,12 +17,12 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - pip
     - param
     - pyct-core
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - colorcet
     - dask-core
     - multipledispatch
@@ -47,6 +47,7 @@ test:
     - pytest-benchmark
     - holoviews >=1.14.1
     - netcdf4
+    - python {{ python_min }}
   imports:
     - datashader
   commands:
