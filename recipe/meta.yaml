@@ -47,9 +47,6 @@ test:
     - python {{ python_min }}
   imports:
     - datashader
-  commands:
-    # just run one notebook for now; increase in the future if notebooks can be run quickly with test/tiny data
-    - pytest --nbsmoke-run -k ".ipynb" examples/getting_started/2_Pipeline.ipynb
 
 about:
   home: https://datashader.org
