@@ -1,4 +1,4 @@
-{% set version = "0.18.2" %}
+{% set version = "0.19.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -7,14 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/d/datashader/datashader-{{ version }}.tar.gz
-  sha256: 53ef0bc35b9ba1034bdf290a2e28babf0fa2b075a3e5a822c79dcde12183d1ff
+  sha256: beab445a44ac5f1dbc3f562c85d595c886a29dce4cc85eeb9a50723b729d57a2
 
 build:
   number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
-  entry_points:
-    - datashader = datashader.__main__:main
 
 requirements:
   host:
@@ -49,10 +47,6 @@ test:
     - python {{ python_min }}
   imports:
     - datashader
-  commands:
-    - datashader copy-examples --path=. --force
-    # just run one notebook for now; increase in the future if notebooks can be run quickly with test/tiny data
-    - pytest --nbsmoke-run -k ".ipynb" getting_started/2_Pipeline.ipynb
 
 about:
   home: https://datashader.org
