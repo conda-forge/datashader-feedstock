@@ -13,8 +13,6 @@ build:
   number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
-  entry_points:
-    - datashader = datashader.__main__:main
 
 requirements:
   host:
@@ -50,7 +48,6 @@ test:
   imports:
     - datashader
   commands:
-    - datashader copy-examples --path=. --force
     # just run one notebook for now; increase in the future if notebooks can be run quickly with test/tiny data
     - pytest --nbsmoke-run -k ".ipynb" getting_started/2_Pipeline.ipynb
 
